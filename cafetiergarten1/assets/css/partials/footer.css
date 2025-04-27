@@ -1,0 +1,14 @@
+/* Footer styles */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  font-size: 0.8rem;
+  background: white;
+  border-top: 0.5px solid #CF3212;
+}
+
+.footer-section {
+  flex: 1;
+  text-align: center;
+}

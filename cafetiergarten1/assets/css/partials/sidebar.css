@@ -1,0 +1,26 @@
+/* Sidebar styles */
+.sidebar {
+  width: 220px;
+  flex-shrink: 0;
+  border-right: 1px solid #CF3212;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu li {
+  margin-bottom: 10px;
+}
+
+.menu a {
+  color: #A0A0A0;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #000;
+}

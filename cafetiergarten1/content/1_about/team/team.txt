@@ -2,9 +2,5 @@ Title: Das sind Wir
 ----
 Intro: Wir sind vier engagierte Menschen mit Gastroliebe
 ----
-Text: Hi... 
----- 
-Year: 
-----
-Category: ...
-----
+Welcome to our Café Tiergarten! We are passionate about good coffee and delicious cakes.
+![Simon.jpg](Simon.jpg)

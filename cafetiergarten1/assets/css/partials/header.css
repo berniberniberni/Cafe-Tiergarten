@@ -1,0 +1,12 @@
+/* Header-specific styles */
+.header {
+  background: white;
+  padding: 1rem;
+}
+
+.logo {
+  font-weight: bold;
+  color: #CF3212;
+  margin-bottom: 2rem;
+  display: inline-block;
+}

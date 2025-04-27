@@ -1,0 +1,16 @@
+
+  /* Forms */
+input, textarea, select {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  input:focus, textarea:focus, select:focus {
+    border-color: #CF3212;
+    outline: none;
+  }
+  

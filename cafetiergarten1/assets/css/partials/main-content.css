@@ -1,0 +1,8 @@
+/* Main content area */
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  border: 0.5px solid #CF3212;
+  display: flex;
+  flex-direction: column;
+}

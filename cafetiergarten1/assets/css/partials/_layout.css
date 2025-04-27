@@ -1,0 +1,42 @@
+/* Overall page layout */
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main"
+    "sidebar footer";
+}
+
+.sidebar {
+  grid-area: sidebar;
+  height: 100%;
+  border-right: 0.5px solid #CF3212;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.header {
+  grid-area: header;
+  background: white;
+  padding: 1rem;
+}
+
+.main-content {
+  grid-area: main;
+  padding: 2rem;
+  border: 0.5px solid #CF3212;
+}
+
+.footer {
+  grid-area: footer;
+  padding: 1rem;
+  border-top: 0.5px solid #CF3212;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+}

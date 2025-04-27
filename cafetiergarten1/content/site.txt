@@ -1,3 +1,11 @@
 Title: Café Tiergarten
 ----
-Instagram: https://www.instagram.com/cafetiergarten
+email: info@cafetiergarten.com
+----
+phone: +49 30 123456
+----
+address: Altonaer Straße 3, 10557 Berlin
+----
+instagram:https://instagram.com/cafetiergarten
+----
+impressum: /legal-notice
