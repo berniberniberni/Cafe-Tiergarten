@@ -1,0 +1,9 @@
+### Notes
+
+folders: 
+- Assets folder for Styling
+- content contains all images, pdfs, text, ... -> all content (no database needed ->filebased)
+in site we store global data like social links, header images etc. 
+- never touch kirby 
+- never touch media (optimize, resize... images are loaded here, no original content, just caches)
+- site: templaes, blueprints, ... developer files to modify 
