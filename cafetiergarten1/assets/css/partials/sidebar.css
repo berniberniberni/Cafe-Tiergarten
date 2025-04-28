@@ -36,7 +36,7 @@
 }
 
 .logo {
-  font-weight:bolder;
+  font-weight: lighter;
   color: #CF3212;
   font-size: 1.2rem;
 }
@@ -47,6 +47,7 @@
   font-size: 2rem;
   cursor: pointer;
   padding: 1rem;
+  border-right: 0.5px solid #CF3212;
 }
 
 /* Mobile Ansicht */
@@ -71,9 +72,17 @@
   }
 
   .page-container {
-    margin-left: 0;
-    padding: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-left: 0.5px solid #CF3212; 
+    min-height: 100vh;
+    box-sizing: border-box;
   }
+}
+
+.main-content {
+  padding: 1rem; /* damit rote Linie durchgezogen bleibt padding auf .main-content anwenden und nicht auf .page-container*/
 }
 
 .search {

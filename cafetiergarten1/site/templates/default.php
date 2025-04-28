@@ -1,8 +1,11 @@
 <?php snippet('header') ?>
 
 <body>
-  <div class="hamburger" onclick="toggleSidebar()">☰</div>
-
+<div class="hamburger" onclick="toggleSidebar()">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
   <?php snippet('sidebar') ?>
 
   <div class="page-container">

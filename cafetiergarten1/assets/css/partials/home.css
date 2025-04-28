@@ -1,0 +1,20 @@
+.table-area {
+  position: relative;
+  width: 100%;
+  height: 70vh; /* Höhe des Tisches */
+  border: 0.5px solid #CF3212;
+  background-color: rgb(241, 237, 223);
+  margin: 2rem 0; 
+  overflow: hidden;
+}
+
+.draggable {
+  width: 100px; /* Bildgröße anpassen */
+  height: auto;
+  cursor: grab;
+  transition: transform 0.2s ease;
+}
+
+.draggable:hover {
+  transform: scale(1.05);
+}

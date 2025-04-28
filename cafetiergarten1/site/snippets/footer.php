@@ -15,13 +15,25 @@
   </div>
 </footer>
 
-<!-- Mobile menu script -->
+<!-- Mobile Menü Script 
 <script>
+document.addEventListener('DOMContentLoaded', function() {
   const hamburger = document.getElementById('hamburger');
-  const navWrapper = document.getElementById('nav-wrapper');
+  const sidebar = document.querySelector('.sidebar');
 
-  hamburger.addEventListener('click', () => {
-    navWrapper.classList.toggle('open');
-  });
-</script>
+  if (hamburger && sidebar) {
+    hamburger.addEventListener('click', function() {
+      sidebar.classList.toggle('open');
+    });
+  }
+});
+</script> -->
+
+<!-- Nur auf der Home-Seite home.js laden -->
+<?php if ($page->isHomePage()): ?>
+  <?= js('assets/js/home.js') ?>
+<?php endif ?>
+
+</body>
+</html>
 

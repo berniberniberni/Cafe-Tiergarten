@@ -18,13 +18,6 @@ body {
   border-right: 0.5px solid #CF3212;
 }
 
-/* Container for header, main and footer */
-.page-container {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
 
 /* Header inside page container */
 .header {
@@ -49,4 +42,12 @@ body {
   align-items: center;
   background: white;
   font-size: 14px;
+}
+
+.page-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  border-left: 0.5px solid #CF3212;
 }
