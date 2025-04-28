@@ -1,8 +1,24 @@
+/* Main content area */
 .main-content {
   flex: 1;
   padding: 2rem;
-  border-top: 0.5px solid #CF3212;
-  border-bottom: 0.5px solid #CF3212;
-  display: flex;
-  flex-direction: column;
+  border: 0.5px solid #CF3212;
+  background: white;
+  box-sizing: border-box;
+}
+
+/* Inhalt innerhalb vom Main (Text) */
+.main-content p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+/* Mobile Anpassungen */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 1rem;
+    border-left: none;
+    border-right: none;
+    border-bottom: 0.5px solid #CF3212;
+  }
 }

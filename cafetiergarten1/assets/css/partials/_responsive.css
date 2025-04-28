@@ -1,41 +1,53 @@
-  
-  @media (max-width: 768px) {
-    .sidebar {
-      width: 100%;
-      height: auto;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1rem;
-      border-right: none;
-      border-bottom: 0.5px solid #CF3212;
-    }
-  
-    .sidebar-top {
-      flex-direction: row;
-      align-items: center;
-      gap: 1rem;
-    }
-  
-    .menu ul {
-      display: flex;
-      flex-direction: row;
-      gap: 1rem;
-    }
-  
-    .sidebar-bottom {
-      display: none; /* Optional: Hide search on mobile if no space */
-    }
-  
-    .main-content {
-      padding: 1rem;
-      grid-template-columns: 1fr;
-      padding: 20px;
-    }
-  
-    .footer {
-      flex-direction: column;
-      text-align: center;
-    }
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-right: none;
+    border-bottom: 0.5px solid #CF3212;
+    position: relative;
   }
-  
+
+  .logo {
+    margin: 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-wrapper {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    width: 100%;
+    background: white;
+    border-top: 0.5px solid #CF3212;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 10;
+  }
+
+  .nav-wrapper.open {
+    max-height: 500px; /* beliebig groß, reicht für Menü */
+    padding: 1rem;
+  }
+
+  .menu {
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu li {
+    margin-bottom: 10px;
+  }
+
+  .search {
+    margin-top: 1rem;
+  }
+}

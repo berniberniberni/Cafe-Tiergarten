@@ -2,19 +2,31 @@
 .header {
   background: white;
   padding: 1rem;
-  border-top: #CF3212;
-}
-
-.logo {
-  font-weight: bold;
-  color: #CF3212;
-  margin-bottom: 2rem;
-  display: inline-block;
+  border-bottom: 0.5px solid #CF3212;
+  box-sizing: border-box;
 }
 
 .header h1 {
+  margin: 0;
   font-size: 1rem;
   font-weight:lighter;
-  margin-bottom: 1rem;
-  color: #000000;
+  color: #CF3212;
 }
+
+/* Mobile Anpassungen */
+@media (max-width: 768px) {
+  .header {
+    padding: 0.8rem 1rem;
+  }
+
+
+/* Header styles */
+.header { 
+  width: 100%;
+  background: white;
+  padding: 1.5rem 2rem;
+  border-bottom: 0.5px solid #CF3212;
+  box-sizing: border-box;
+}
+}
+

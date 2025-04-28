@@ -14,5 +14,14 @@
     <p><a href="<?= page('imprint')->url() ?>">Impressum</a></p>
   </div>
 </footer>
-</body>
-</html>
+
+<!-- Mobile menu script -->
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navWrapper = document.getElementById('nav-wrapper');
+
+  hamburger.addEventListener('click', () => {
+    navWrapper.classList.toggle('open');
+  });
+</script>
+

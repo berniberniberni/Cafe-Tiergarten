@@ -6,6 +6,7 @@
   align-items: center;
   padding: 1rem;
   font-size: 0.8rem;
+  font-weight: lighter;
   background: white;
   border-top: 0.5px solid #CF3212;
   box-sizing: border-box;
@@ -21,7 +22,7 @@
 
 
 .footer-section.footer-left {
-  align-items: flex-start;
+  align-items: left;
   text-align: left;
 }
 
@@ -31,12 +32,12 @@
 }
 
 .footer-section.footer-right {
-  align-items: flex-end;
+  align-items: right;
   text-align: right;
 }
 
 /* Responsive: Footer stacks on mobile */
-@media (max-width: 768px) {
+@media (max-width: 768px) { 
   .footer {
     flex-direction: column;
     text-align: center;
