@@ -1,14 +1,34 @@
-
-@media (max-width: 768px) {
-    .page-container {
-      flex-direction: column;
-    }
   
+  @media (max-width: 768px) {
     .sidebar {
       width: 100%;
+      height: auto;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+      border-right: none;
+      border-bottom: 0.5px solid #CF3212;
+    }
+  
+    .sidebar-top {
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
+    }
+  
+    .menu ul {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+    }
+  
+    .sidebar-bottom {
+      display: none; /* Optional: Hide search on mobile if no space */
     }
   
     .main-content {
+      padding: 1rem;
       grid-template-columns: 1fr;
       padding: 20px;
     }

@@ -1,29 +1,18 @@
 <?php snippet('header') ?>
 
-<div class="page-layout">
-  
-  <aside class="sidebar">
-    <a class="logo" href="<?= $site->url() ?>"><?= $site->title() ?></a>
-    <nav class="menu">
-      <ul>
-        <?php foreach ($site->children()->listed() as $item): ?>
-          <li><a href="<?= $item->url() ?>"><?= $item->title() ?></a></li>
-        <?php endforeach ?>
-      </ul>
-    </nav>
-  </aside>
+<body>
+  <?php snippet('sidebar') ?>
 
-  <div class="main-and-footer">
+  <div class="page-container">
+    <header class="header">
+      <h1><?= $page->title() ?></h1>
+    </header>
+
     <main class="main-content">
-      <section class="subpage">
-        <h1><?= $page->title() ?></h1>
-        <div class="text">
-          <?= $page->text()->kirbytext() ?>
-        </div>
-      </section>
+      <?= $page->text()->kirbytext() ?>
     </main>
 
     <?php snippet('footer') ?>
   </div>
-
-</div>
+</body>
+</html>

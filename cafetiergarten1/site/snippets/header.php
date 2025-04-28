@@ -1,7 +1,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?= $site->title() ?></title>
-
-  <?= css('assets/css/main.css') ?>
+  <title><?= $site->title() ?> | <?= $page->title() ?></title>
+  <link rel="stylesheet" href="<?= url('assets/css/main.css') ?>">
 </head>

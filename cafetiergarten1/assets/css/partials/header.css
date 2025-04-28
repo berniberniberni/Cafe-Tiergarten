@@ -2,6 +2,7 @@
 .header {
   background: white;
   padding: 1rem;
+  border-top: #CF3212;
 }
 
 .logo {
@@ -9,4 +10,11 @@
   color: #CF3212;
   margin-bottom: 2rem;
   display: inline-block;
+}
+
+.header h1 {
+  font-size: 1rem;
+  font-weight:lighter;
+  margin-bottom: 1rem;
+  color: #000000;
 }
