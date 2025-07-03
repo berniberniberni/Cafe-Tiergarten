@@ -1,2 +1,2 @@
-# Caf-Tiergarten
+# Cafe-Tiergarten
 Café Tiergarten Website
