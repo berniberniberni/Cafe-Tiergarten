@@ -1,7 +1,18 @@
 <aside class="sidebar">
-  <div class="logo">
-    <a href="<?= url() ?>"><?= $site->title() ?></a>
-  </div>
+  <!--<div class="logo">
+  <a href=" <?= url() ?>"><?= $site->title() ?> </a> 
+  </div>-->
+
+  <!--
+  <div class="sidebar-logo">
+  <a href="<?= url() ?>">
+    <img src="<?= url('assets/images/logo.svg') ?>" alt="Café Tiergarten Logo">
+  </a>
+</div> -->
+
+<div class="sidebar-title">
+  <a href="<?= url() ?>"><?= $site->title() ?></a>
+</div>
 
   <nav class="menu">
     <ul>

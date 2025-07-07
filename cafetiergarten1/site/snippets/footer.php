@@ -15,7 +15,7 @@
   </div>
 </footer>
 
-<!-- Mobile Menü Script 
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   const hamburger = document.getElementById('hamburger');
@@ -27,12 +27,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
-</script> -->
+</script> 
 
 <!-- Nur auf der Home-Seite home.js laden -->
 <?php if ($page->isHomePage()): ?>
   <?= js('assets/js/home.js') ?>
 <?php endif ?>
+
+<script src="<?= url('assets/js/status.js') ?>"></script>
+
 
 </body>
 </html>

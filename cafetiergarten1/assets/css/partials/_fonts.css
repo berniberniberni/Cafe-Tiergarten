@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Honeymoon';
+  src: url('../../fonts/ABCHoneymoon-Hairline-Trial.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BerlinTypeWeb';
+  src: url('../../fonts/BerlinTypeWeb-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}

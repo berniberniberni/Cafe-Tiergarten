@@ -25,6 +25,12 @@ body {
   border-bottom: 0.5px solid #CF3212;
 }
 
+.status-message {
+  text-align: center;
+  font-weight: lighter;
+  color: #CF3212;
+}
+
 /* Main content */
 .main-content {
   flex: 1;

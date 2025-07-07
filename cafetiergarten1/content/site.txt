@@ -4,7 +4,7 @@ email: info@cafetiergarten.com
 ----
 phone: +49 30 123456
 ----
-address: Altonaer Straße 3, 10557 Berlin
+address: Altonaer Straße 3, 10557 Berlin,  Mi-So 10-18 Uhr
 ----
 instagram:https://instagram.com/cafetiergarten
 ----

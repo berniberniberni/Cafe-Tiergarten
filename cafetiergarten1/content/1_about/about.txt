@@ -1,3 +1,4 @@
-Title: Über uns
+Title: About
 ----
-Text: Hallo, hier findest du Informationen über uns.
+Text: Welcome to Café Tiergarten. This is the about section.  
+It’s styled with two columns — text left, images right.

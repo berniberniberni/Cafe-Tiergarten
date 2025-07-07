@@ -3,16 +3,25 @@
 <body>
   <?php snippet('sidebar') ?>
 
-  <div class="page-container">
+ <div class="page-container">
     <header class="header">
       <h1><?= $page->title() ?></h1>
+      <link rel="stylesheet" href="<?= url('assets/css/main.css') ?>">
+      <div class="status-message" id="statusMessage"></div>
     </header>
 
     <main class="main-content">
+  
       <div class="table-area" id="table-area">
-        <img src="<?= url('assets/images/Hering.png') ?>" class="draggable" alt="Hering" draggable="true">
-        <img src="<?= url('assets/images/Besteck.png') ?>" class="draggable" alt="Besteck" draggable="true">
+        <img src="<?= url('assets/images/colaundwein.png') ?>" class="draggable" alt="colaundwein" draggable="true">
         <img src="<?= url('assets/images/brot.png') ?>" class="draggable" alt="Brotkorb" draggable="true">
+        <img src="<?= url('assets/images/kirsche.png') ?>" class="draggable" alt="Kirschmochi" draggable="true">
+        <img src="<?= url('assets/images/silberschale.png') ?>" class="draggable" alt="silberschale" draggable="true">
+        <img src="<?= url('assets/images/silberdose.png') ?>" class="draggable" alt="silberdose" draggable="true">
+        <img src="<?= url('assets/images/oliven.png') ?>" class="draggable" alt="oliven" draggable="true">
+        <img src="<?= url('assets/images/teigtaschen.png') ?>" class="draggable" alt="teigtaschen" draggable="true">
+        <img src="<?= url('assets/images/Granita_Sahne.png') ?>" class="draggable" alt="Granita" draggable="true">
+        <img src="<?= url('assets/images/lampe.png') ?>" class="draggable" alt="Lampe" draggable="true">
       </div>
     </main>
 

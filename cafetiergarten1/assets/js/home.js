@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       draggable.style.position = 'absolute';
       draggable.style.zIndex = 1000;
-      tableArea.appendChild(draggable); // <<< richtig auf tableArea!
+      tableArea.appendChild(draggable); // <<< korrigiert auf class tableArea!
 
       moveAt(e.pageX, e.pageY);
 

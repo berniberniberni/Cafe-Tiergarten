@@ -35,10 +35,10 @@
   font-weight: lighter;
 }
 
-.logo {
-  font-weight: lighter;
+.sidebar-title a {
   color: #CF3212;
-  font-size: 1.2rem;
+  font-weight: lighter;
+  text-decoration: none;
 }
 
 /* Hamburger Standard: Versteckt */

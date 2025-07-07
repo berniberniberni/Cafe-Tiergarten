@@ -1,0 +1,22 @@
+title: Menü
+files:
+  menu_image:
+    label: Menübild
+    type: files
+    multiple: false
+    accept:
+      - image/*
+fields:
+  drinks:
+    label: Getränke
+    type: structure
+    fields:
+      name:
+        label: Name
+        type: text
+      description:
+        label: Beschreibung
+        type: text
+      price:
+        label: Preis
+        type: text
