@@ -1,55 +1,54 @@
-.template-menu .main-content {
+/* === Background: Buchskizze === */
+.main-content.menu {
+  background-image: url('/assets/images/menu_book.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
   display: flex;
+  flex-direction: row;
+  position: relative;
   height: 100%;
+  width: 100%;
   overflow: hidden;
 }
 
-.template-menu .menu-page {
+/* === Spalten (Buchseiten) === */
+.text-column {
   width: 50%;
-  height: 100%;
-  overflow-y: auto;
-  box-sizing: border-box;
   padding: 2rem;
-  background: url('/assets/images/menu-outline.svg') no-repeat center/contain;
-  background-color: white;
-  font-family: 'Berlin Type Web', sans-serif;
+  overflow-y: auto;
+  height: 100%;
+  box-sizing: border-box;
 }
 
-.template-menu .menu-page.left {
-  border-right: 0.5px solid red;
-}
-
-.template-menu .menu-content h2 {
-  font-family: 'ABC Honeymoon Hairline', sans-serif;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.template-menu .menu-list {
+/* === Menülisten === */
+.menu-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 2rem;
 }
 
-.template-menu .menu-list li {
+.menu-list li {
   margin-bottom: 1.5rem;
-  line-height: 1.4;
+  font-family: 'BerlinTypeWeb', sans-serif;
 }
 
-.template-menu .menu-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+.menu-list strong {
+  font-weight: bold;
+  display: block;
+}
+
+.menu-list small {
+  font-size: 0.9rem;
+  display: block;
+  color: #555;
+}
+
+/* === Überschriften / Rubriken === */
+.text-column h2 {
+  font-family: 'Honeymoon', sans-serif;
   font-size: 2rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.template-menu .menu-arrow.left {
-  left: 1rem;
-}
-
-.template-menu .menu-arrow.right {
-  right: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-weight: normal;
 }

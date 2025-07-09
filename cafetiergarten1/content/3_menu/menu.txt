@@ -1,5 +1,6 @@
 Title: Menü
 ----
+
 Drinks:
 - name: Bouche Kombucha
   description: Berliner Kombucha, diverse Sorten
@@ -7,11 +8,15 @@ Drinks:
 - name: Apfelschorle
   description: Saft von Ketzürer Streuobstwiesen
   price: 2,80 €
+----
 
 Food:
-- name: Butterbrot
-  description: Sauerteigbrot mit Butter & Salz
+- name: Butterbrezel
+  description: Brezel mit Butter
   price: 2,50 €
-- name: Quiche
-  description: Mit Lauch, Ziegenkäse & Walnüssen
-  price: 5,80 €
+- name: Butterbrezel mit Käse 
+  description: Brezel mit Butter und Käse
+  price: 3,50 €
+- name: Butterbrezel mit Schinken
+  description: Brezel mit Butter und Schinken
+  price: 3,50 €

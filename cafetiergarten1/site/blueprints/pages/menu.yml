@@ -1,22 +1,35 @@
-title: Menü
-files:
-  menu_image:
-    label: Menübild
-    type: files
-    multiple: false
-    accept:
-      - image/*
-fields:
-  drinks:
-    label: Getränke
-    type: structure
-    fields:
-      name:
-        label: Name
-        type: text
-      description:
-        label: Beschreibung
-        type: text
-      price:
-        label: Preis
-        type: text
+title: Menu
+
+columns:
+  - width: 1/1
+    sections:
+      content:
+        type: fields
+        fields:
+          drinks:
+            label: Getränke
+            type: structure
+            fields:
+              name:
+                label: Name
+                type: text
+              description:
+                label: Beschreibung
+                type: textarea
+              price:
+                label: Preis
+                type: text
+
+          food:
+            label: Speisen
+            type: structure
+            fields:
+              name:
+                label: Name
+                type: text
+              description:
+                label: Beschreibung
+                type: textarea
+              price:
+                label: Preis
+                type: text
