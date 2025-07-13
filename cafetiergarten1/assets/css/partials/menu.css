@@ -16,6 +16,7 @@
 .text-column {
   width: 50%;
   padding: 2rem;
+  padding-left: 10cm;
   overflow-y: auto;
   height: 100%;
   box-sizing: border-box;

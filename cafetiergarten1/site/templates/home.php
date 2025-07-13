@@ -27,6 +27,8 @@
         <img src="<?= url('assets/images/coffee.png') ?>" class="draggable" alt="coffee" draggable="true">
         <img src="<?= url('assets/images/citrus.png') ?>" class="draggable" alt="Zitronen" draggable="true">
       </div>
+
+        <div id="drop-area">  </div> <!-- Drop Area -->
     </main>
 
     <?php snippet('footer') ?>
