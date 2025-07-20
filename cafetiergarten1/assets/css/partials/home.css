@@ -15,15 +15,16 @@
   width: 100%;
    /* Höhe des Tisches */
   /*border: 0.5px solid #CF3212;*/
+  align-items: flex-end;
+  justify-content: space-around; 
+  position: relative;
   height: 100%;
   background-image: url('/assets/images/tisch3.png');
   background-size: cover;  /* Bild anpassen */
   background-repeat: no-repeat;
-  background-position: center 70%;
+  background-position: center 25%;
   overflow: hidden;
-  scrollbar-base-color: aqua;
 }
-
 
 
 .draggable {
@@ -36,4 +37,5 @@
 .draggable:hover {
   transform: scale(1.05);
 }
+
 

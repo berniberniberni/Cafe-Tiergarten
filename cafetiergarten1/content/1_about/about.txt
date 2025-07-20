@@ -1,4 +1,3 @@
-Title: About
+Title: Info
 ----
-Text: Welcome to Café Tiergarten. This is the about section.  
-It’s styled with two columns — text left, images right.
+Text: 

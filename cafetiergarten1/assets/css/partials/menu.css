@@ -1,55 +1,64 @@
-/* === Background: Buchskizze === */
 .main-content.menu {
   background-image: url('/assets/images/menu_book.png');
-  background-position: center center;
   background-repeat: no-repeat;
+  background-position: center;
   background-size: contain;
   display: flex;
   flex-direction: row;
   position: relative;
-  height: 100%;
   width: 100%;
-  overflow: hidden;
+  padding: 4rem;
+  margin-top: 2rem;
 }
 
-/* === Spalten (Buchseiten) === */
 .text-column {
-  width: 50%;
-  padding: 2rem;
-  padding-left: 10cm;
-  overflow-y: auto;
+  flex-grow: 1;
+  flex-basis: 0; /* Allow unequal sizing with padding */
   height: 100%;
+  overflow-y: auto;
   box-sizing: border-box;
+  text-align: right;
 }
 
-/* === Menülisten === */
-.menu-list {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 2rem;
+.left-page {
+  padding: 2rem 2rem 2rem 6rem;     /* push right inside the left sketch */
+  transform: translateX(14rem);  
+  /*background: rgba(255, 0, 0, 0.05);  */
+  text-align: right;;
 }
 
-.menu-list li {
-  margin-bottom: 1.5rem;
+.right-page {
+  padding: 2rem 6rem 2rem 2rem; 
+  transform: translateX(1rem); 
+    /*background: rgba(0, 0, 255, 0.05);*/
+}
+
+body,
+html {
   font-family: 'BerlinTypeWeb', sans-serif;
+}
+
+.menu h2 {
+  font-family: 'Honeymoon';
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 2rem 0 1rem;
+}
+
+.menu .menu-list {
+  font-family: 'BerlinTypeWeb', sans-serif;
+  font-size: 1rem;
 }
 
 .menu-list strong {
   font-weight: bold;
-  display: block;
 }
 
 .menu-list small {
   font-size: 0.9rem;
-  display: block;
   color: #555;
 }
 
-/* === Überschriften / Rubriken === */
-.text-column h2 {
-  font-family: 'Honeymoon', sans-serif;
-  font-size: 2rem;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-  font-weight: normal;
+body.menu .page-container {
+  border-bottom: none;
 }

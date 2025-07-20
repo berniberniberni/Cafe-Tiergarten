@@ -1,0 +1,95 @@
+/* === Fonts === */
+
+.section-title {
+  font-family: 'Honeymoon', sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 2rem 0 1rem;
+}
+
+body,
+html {
+  font-family: 'BerlinTypeWeb', sans-serif;
+}
+
+
+
+/* === Basics === */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'BerlinTypeWeb', sans-serif;
+  overflow: hidden; 
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* === Header & Footer === */
+.header {
+  flex: 0 0 auto;
+  padding: 1rem;
+  border-bottom: 0.5px solid red;
+}
+
+.footer {
+  flex: 0 0 auto;
+  padding: 1rem;
+  border-top: 0.5px solid red;
+}
+
+/* === Main Content with Columns === */
+.main-content {
+  flex: 1 1 auto;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+/* === Columns === */
+.image-column {
+  width: 50%;
+  overflow-y: auto;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.text-column {
+     width: 50%;
+    overflow-y: auto;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+    padding: 3rem;
+    font-family: 'BerlinTypeWeb', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 1.5rem; 
+    line-height: 1.6;
+    text-align: justify;      
+}
+
+
+/* === Mittige Trennlinie === */
+.produce .main-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 0.5px;
+  background-color: #CF3212;
+  z-index: 2;
+}
+
+/* Optional: Bilder auf Spaltenbreite */
+.image-column img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

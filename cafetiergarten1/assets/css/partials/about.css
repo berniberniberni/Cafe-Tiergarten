@@ -21,21 +21,6 @@ html {
   font-family: 'BerlinTypeWeb', sans-serif;
 }
 
-/* === Fonts === */
-@font-face {
-  font-family: 'BerlinTypeWeb';
-  src: url('../fonts/BerlinTypeWeb-Regular.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'ABC Honeymoon Hairline';
-  src: url('../fonts/ABCHoneymoon-Hairline-Trial.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-
 /* === Basics === */
 html, body {
   margin: 0;
@@ -55,13 +40,71 @@ html, body {
 .header {
   flex: 0 0 auto;
   padding: 1rem;
-  border-bottom: 0.5px solid red;
+  border-bottom: 0.5px solid #CF3212;
 }
 
 .footer {
   flex: 0 0 auto;
   padding: 1rem;
-  border-top: 0.5px solid red;
+  border-top: 0.5px /* Full layout: sidebar and content side by side */
+}
+body {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Sidebar fixed on left */
+.sidebar {
+  width: 220px;
+  background: white;
+  padding: 1rem;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 0.5px solid #CF3212;
+}
+
+
+/* Header inside page container */
+.header {
+  padding: 1rem;
+  border-bottom: 0.5px solid #CF3212;
+}
+
+.status-message {
+  text-align: center;
+  font-weight: lighter;
+  color: #CF3212;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  border-bottom: 0.5px solid #CF3212;
+  background: white;
+}
+
+/* Footer */
+.footer {
+  padding: 1rem;
+  border-top: 0.5px solid #CF3212;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  font-size: 14px;
+}
+
+.page-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  border-left: 0.5px solid #CF3212;
 }
 
 /* === Main Content with Columns === */
@@ -75,16 +118,19 @@ html, body {
 }
 
 /* === Columns === */
-.text-column,
 .image-column {
   width: 50%;
   overflow-y: auto;
   height: 100%;
   box-sizing: border-box;
-  padding: 1rem;
 }
 
 .text-column {
+     width: 50%;
+    overflow-y: auto;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
     padding: 3rem;
     font-family: 'BerlinTypeWeb', sans-serif;
     font-size: 1rem;
@@ -102,7 +148,7 @@ html, body {
   bottom: 0;
   left: 50%;
   width: 0.5px;
-  background-color: red;
+  background-color: #CF3212;
   z-index: 2;
 }
 

@@ -1,21 +1,6 @@
-Title: Unser Team
+Title: Das Team
 ----
 Text: 
+Wir stehen für schnörkellose, gute Produkte aus fairer Herstellung. Mit einem besonderen Blick fürs Detail arbeiten wir ausschließlich mit den besten Produzent:innen – von der Renovierung über die Ausstattung bis hin zur Produktauswahl und Speisekarte. Mehr zu unserer Produktphilosophie findet ihr unter [Produktkunde](Produce).
 
-Wir stehen für schnörkellose, gute Produkte aus fairer Herstellung. Mit einem besonderen Blick fürs Detail arbeiten wir ausschließlich mit den besten Produzent:innen – von der Renovierung über die Ausstattung bis hin zur Produktauswahl und Speisekarte.
-
-Das Team:
-Simon Freund
-Geschäftsführer, Künstler und Unternehmer, zuletzt tätig bei Bouche Kombucha
-
-Nicolas Mertens
-Gastronom mit langjähriger Erfahrung
-
-Leonie Herweg
-Öffentlichkeitsarbeit & Art Direction, leitet zudem den Projektraum GROTTO am Hansaplatz
-
-Sophie Kretzschmar
-Head of Produce & Sourcing, Absolventin der Slow Food Universität UNISG im Piemont.
-Mit einem Hintergrund in nachhaltiger Gastronomie und Produzent:innen-Netzwerken entwickelt sie das kulinarische Angebot des Cafés: frisch, bewusst und unkompliziert, mit Zutaten aus der Region.
-
-Mehr zu unserer Produktphilosophie findet ihr unter [Produktkunde](Produce).
+[Simon Freund](https://www.simonfreund.xyz/) ist Geschäftsführer, Künstler und Unternehmer. Gemeinsam mit Leonie leitet er den Kunstraum [Grotto](https://grotto.berlin/de). [Leonie Herweg](https://leonies.world/) ist für Öffentlichkeitsarbeit und Art Direction zuständig. Sie leitet zudem den Projektraum [GROTTO](https://grotto.berlin/de) am Hansaplatz, der sich zeitgenössischer Kunst widmet. Nicolas Mertens ist Gastronom mit langjähriger Erfahrung. Für das Café Tiergarten hat er seine Zelte in Frankfurt abgebrochen und ist nach Berlin gezogen, um seine Erfahrung und Leidenschaft für gutes Essen und Trinken mit uns uns euch zu teilen und tolle Speisen und Getränle zu kreieren. Sophie Kretzschmar ist Head of Produce & Sourcing. Mit einem Abschluss der Slowfood Universität im Piemoent und einem tollen Produzent:innen-Netzwerken kümmert sie sich um unsere Produktauswahl und unterstützt somit die Entwicklung des kulinarischem Angebot des Cafés: frisch, bewusst und unkompliziert, mit Zutaten aus der Region. Daneben unterstützen uns von Beginn an viele tolle Menschen, die uns mit ihrem Wissen und ihren Fähigkeiten zur Seite stehen. Johanna Karges, Architektin und Designerin, hat uns bei der Planung und Umsetzung des Cafés unterstützt und ist auch regelmäßig im Café im Service anzutreffen. Sam unterstützt uns seit Juni als Prakikant. Berni hat unsere Webseite entworfen und implementiert.
