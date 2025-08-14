@@ -2,21 +2,70 @@ Title: Menü
 ----
 
 Drinks:
-- name: Bouche Kombucha
-  description: Berliner Kombucha, diverse Sorten
-  price: 3,80 €
+- name: Filterkaffee
+  description: verschiedene Sorten • ausgewählt von tornqvist
+  price: 3,50 €
+- name: Espresso
+  description: singolo • doppio • al blanco
+  price: 2,50 € • 3,50 € • 1,00 €
+  price: 3,00 €
+- name: Americano
+  description: Espresso mit heißem Wasser
+  price: 3,00 €
+- name: Cappuccino
+  description: Espresso mit aufgeschäumter Milch
+  price: 3,80 €
+- name: Flat White
+  description: Espresso mit aufgeschäumter Milch
+  price: 4,20 €
+- name: Latte Macchiato
+  description: Espresso mit aufgeschäumter Milch und Milchschaum
+  price: 4,80 €
+- name: Tee
+  description: verschiedene Sorten • ausgewählt von ...
+  price: 4,00 €
+- name: Wasser
+  description: still oder laut • 0,3/1 Liter Karaffe
+  price: 2,50€/6€
 - name: Apfelschorle
-  description: Saft von Ketzürer Streuobstwiesen
-  price: 2,80 €
+  description: Apfelsaft mit Sprudelwasser • 0,3/1 Liter Karaffe
+  price: 4,00€/9,50€
+- name: Zitronenlimonade
+  description: hausgemacht • ohne zucker • 0,3/1 Liter Karaffe
+  price: 4,00€/9,50€
+- name: Orangensaft
+  description: frisch gepresst • bio • 0,15l
+  price: 4€
+- name: BOUCHE
+  description: verschiedene Sorten Kombuscha • 0,33l
+  price: 4,00 €
+- name: KIMONO 
+  description: spritziges Yuzu Getränk • ohne zucker • 0,33l
+  price: 4,00 €
+- name: Fountain of Youth
+  description: 100% Kokoswasser • 0,52l
+  price: 5,00 €
 ----
 
 Food:
-- name: Butterbrezel
-  description: Brezel mit Butter
-  price: 2,50 €
-- name: Butterbrezel mit Käse 
-  description: Brezel mit Butter und Käse
+- name: Croissant
+  description: Sauerteig • 100% Butter
   price: 3,50 €
-- name: Butterbrezel mit Schinken
-  description: Brezel mit Butter und Schinken
-  price: 3,50 €
+- name: Salbeicroissant
+  description: Sauerteig • 100% Butter • mit Salbei
+  price: 4 €
+- name: Brot mit Butter
+  description: Beutebrot• Sauerteig • 100% Butter
+  price: 4€
+- name: Brot mit miso Butter
+  description: Beutebrot• Sauerteig • vegan
+  price: 5€
+- name: Brot mit Butter herzhaft
+  description: Brot mit Butter & Käse
+  price: 6€
+
+- name: Jogurt 
+  description: mit gerösteten Walnüssen und Honig
+  price: 5€
+
+

@@ -16,11 +16,6 @@
 .sidebar-title {
   margin: 0 0 1rem 0; /* Abstand zum Menü */
 }
-.sidebar-title a {
-  color: #CF3212;
-  font-weight: lighter;
-  text-decoration: none;
-}
 
 /* Menü */
 .menu ul {
@@ -38,6 +33,12 @@
 }
 .menu a:hover {
   color: #000;
+}
+
+.sidebar-title a {
+  color: #CF3212;
+  font-weight: lighter;
+  text-decoration: none;
 }
 
 /* Suche exakt in die geometrische Mitte */

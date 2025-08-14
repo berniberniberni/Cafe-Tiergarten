@@ -1,64 +1,37 @@
-.main-content.menu {
-  background-image: url('/assets/images/menu_book.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  display: flex;
-  flex-direction: row;
-  position: relative;
+.menu .main-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 0.5px;
+  background-color: #CF3212;
+  z-index: 2;
+}
+
+/* Optional: Bilder auf Spaltenbreite */
+.image-column img {
   width: 100%;
-  padding: 4rem;
-  margin-top: 2rem;
+  height: auto;
+  display: block;
 }
 
-.text-column {
-  flex-grow: 1;
-  flex-basis: 0; /* Allow unequal sizing with padding */
-  height: 100%;
-  overflow-y: auto;
-  box-sizing: border-box;
-  text-align: right;
+.header {
+  flex: 0 0 auto;
+  padding: 1rem;
+  border-bottom: 0.5px solid red;
 }
 
-.left-page {
-  padding: 2rem 2rem 2rem 6rem;     /* push right inside the left sketch */
-  transform: translateX(14rem);  
-  /*background: rgba(255, 0, 0, 0.05);  */
-  text-align: right;;
+.footer {
+  flex: 0 0 auto;
+  padding: 1rem;
+  border-top: 0.5px solid red;
 }
 
-.right-page {
-  padding: 2rem 6rem 2rem 2rem; 
-  transform: translateX(1rem); 
-    /*background: rgba(0, 0, 255, 0.05);*/
-}
 
-body,
-html {
-  font-family: 'BerlinTypeWeb', sans-serif;
-}
-
-.menu h2 {
-  font-family: 'Honeymoon';
+.section-title {
+  font-family: 'Honeymoon', sans-serif;
   font-size: 2rem;
   font-weight: normal;
   margin: 2rem 0 1rem;
-}
-
-.menu .menu-list {
-  font-family: 'BerlinTypeWeb', sans-serif;
-  font-size: 1rem;
-}
-
-.menu-list strong {
-  font-weight: bold;
-}
-
-.menu-list small {
-  font-size: 0.9rem;
-  color: #555;
-}
-
-body.menu .page-container {
-  border-bottom: none;
 }
