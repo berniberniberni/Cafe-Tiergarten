@@ -22,11 +22,11 @@ Drinks:
   description: Espresso mit aufgeschäumter Milch und Milchschaum
   price: 4,80 €
 - name: Tee
-  description: verschiedene Sorten • ausgewählt von ...
+  description: verschiedene Sorten
   price: 4,00 €
 - name: Wasser
   description: still oder laut • 0,3/1 Liter Karaffe
-  price: 2,50€/6€
+  price: 2,50€/6,00€
 - name: Apfelschorle
   description: Apfelsaft mit Sprudelwasser • 0,3/1 Liter Karaffe
   price: 4,00€/9,50€
@@ -45,6 +45,39 @@ Drinks:
 - name: Fountain of Youth
   description: 100% Kokoswasser • 0,52l
   price: 5,00 €
+- name: Quartiermeister 
+  description: Bio-Pils • 0,33l
+  price: 3,50 €
+- name: Schneeule
+  description: Berliner Weisse • 0,33l
+  price: 5,00 €
+- name: Barnimer Brauhaus
+  description: alkoholfreies Bier • 0,33l
+  price: 4,50 €
+- name: Barnimer Brauhaus vom Fass
+  description: vom Faß • 0,3l/0,5l/1 Liter Karaffe
+  price: 3,90 € • 6,00€ • 11,00€
+- name: Weißwein vom Fass
+  description: 0,15l/0,5l/1 Liter Karaffe
+  price: 6,00€ • 17,00€ • 32,00€
+- name: Weißwein aus der Flasche
+  description: 0,15l
+  price: 6,50€
+- name: Rotwein aus der Flasche
+  description: 0,15l
+  price: 6,50€
+- name: Freiheit Weiß aus der Flasche
+  description: Rheinhessen • trocken • 0,75l
+  price: 36,00 €
+- name: Freiheit Rießling aus der Flasche
+  description: Rheinhessen • trocken • 0,75l
+  price: 42,00 €
+- name: Paloma Tequila
+  description: Tequila • Grapefruit(Mayaciel + Thomas Henry) • 0,5l
+  price: 10,00 €
+- name: IESSI
+  description: alkoholfreier Aperitif aus Italien• 0,33l
+  price: 7,50 €
 ----
 
 Food:
@@ -63,9 +96,19 @@ Food:
 - name: Brot mit Butter herzhaft
   description: Brot mit Butter & Käse
   price: 6€
-
 - name: Jogurt 
   description: mit gerösteten Walnüssen und Honig
   price: 5€
-
-
+- name: Kuchen
+  description: Domberger Zuckerkuchen und Aprikosenkuchen • täglich frisch
+  price: 4,00 €
+- name: Friday Grilled Cheese
+  description: mit ... Käse auf Beutebrot • jeden Freitag
+  price: 12,00 €
+- name: Oliven
+  description: mit Zironenzeste
+  price: 5,00 €
+- name: Eis 
+  description: Paleta Eis am Stiel • verschiedene Sorten • vegan
+  price: 3,50 €
+- name: Käseplatte
