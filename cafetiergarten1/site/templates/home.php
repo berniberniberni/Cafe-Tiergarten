@@ -26,6 +26,7 @@
         <img src="<?= url('assets/images/radish_tomate_plum.png') ?>" class="draggable" alt="Radieschen" draggable="true">
         <img src="<?= url('assets/images/coffee.png') ?>" class="draggable" alt="coffee" draggable="true">
         <img src="<?= url('assets/images/citrus.png') ?>" class="draggable" alt="Zitronen" draggable="true">
+        <img src="<?= url('assets/images/blumis.png') ?>" class="draggable" alt="Blumen" draggable="true">
       </div>
 
         <div id="drop-area">  </div> <!-- Drop Area -->

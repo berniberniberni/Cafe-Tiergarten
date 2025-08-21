@@ -31,13 +31,13 @@ html, body {
 .header {
   flex: 0 0 auto;
   padding: 1rem;
-  border-bottom: 0.5px solid red;
+  border-bottom: 0.5px solid #CF3212;
 }
 
 .footer {
   flex: 0 0 auto;
   padding: 1rem;
-  border-top: 0.5px solid red;
+  border-top: 0.5px solid #CF3212;
 }
 
 /* === Main Content with Columns === */

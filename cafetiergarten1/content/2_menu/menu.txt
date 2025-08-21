@@ -111,4 +111,3 @@ Food:
 - name: Eis 
   description: Paleta Eis am Stiel • verschiedene Sorten • vegan
   price: 3,50 €
-- name: Käseplatte

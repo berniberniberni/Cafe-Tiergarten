@@ -8,8 +8,3 @@ button, .button {
     cursor: pointer;
     font-size: 1rem;
   }
-  
-  button:hover, .button:hover {
-    background-color: #a6280f;
-  }
-  

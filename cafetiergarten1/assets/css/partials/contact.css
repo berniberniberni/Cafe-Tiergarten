@@ -1,0 +1,35 @@
+.main-contact {
+  background-image: var(--bg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  flex: 1 1 auto;
+  background-size: 900px;
+  /* testen: background-size: 400px auto;  feste Pixelgröße */
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+}
+
+.contact-card {
+  max-width: 40ch;       
+  line-height: 1.6;
+  font-size: 1rem;
+
+  display: flex;          /* Block-Inhalt schön zentrieren */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: justify;
+  text-justify: inter-word; 
+  padding: 2rem;
+  border-radius: 1rem;
+  background: rgba(255,255,255,0.8); /* optional */
+}
+
+.contact-card a {
+  color: inherit;
+  font-weight: 500;
+
+}
+ 
