@@ -17,6 +17,17 @@
     <main class="main-contact" style="--bg:url('<?= $bg?->url() ?>')">
       <div class="contact-card">
         <?= $page->text()->kirbytext() ?>
+        <form
+          action="https://buttondown.com/api/emails/embed-subscribe/cafetiergarten"
+          method="post"
+          target="popupwindow"
+          onsubmit="window.open('https://buttondown.com/cafetiergarten', 'popupwindow')"
+          class="embeddable-buttondown-form"
+        >
+          <label for="bd-email">Newsletter abonnieren</label>
+          <input type="email" name="email" id="bd-email" placeholder="E-Mail-Adresse" required />
+          <input type="submit" value="Subscribe" />
+        </form>
       </div>
       
     </main>
