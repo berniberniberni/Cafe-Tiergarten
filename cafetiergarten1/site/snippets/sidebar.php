@@ -12,6 +12,16 @@
     </nav>
   </div>
   <div class="search">
-    <a href="<?= url('search') ?>">Suche ...</a>
+    <form action="<?= url('search') ?>" method="get" class="sidebar-search-form" role="search" aria-label="Seitensuche">
+      <input
+        type="search"
+        name="q"
+        placeholder="Suche ..."
+        value="<?= esc(get('q') ?? '', 'attr') ?>"
+        class="sidebar-search-input"
+        autocomplete="off"
+      >
+      <button type="submit" class="sidebar-search-button">Suchen</button>
+    </form>
   </div>
 </aside>

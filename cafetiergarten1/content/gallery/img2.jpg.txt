@@ -1,0 +1,33 @@
+Sort: 1
+
+----
+
+Caption: 
+
+----
+
+Top: 
+
+----
+
+Left: 
+
+----
+
+Width: 
+
+----
+
+Rotate: 0
+
+----
+
+Z: 1
+
+----
+
+Uuid: 7Re2CZOIjkC2433D
+
+----
+
+Template: painting

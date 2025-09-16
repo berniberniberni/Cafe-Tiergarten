@@ -1,6 +1,13 @@
 Title: Kontakt
+
 ----
 
-Text: 
-Wir vermieten unsere Räume und bieten Catering für private Feiern, Firmenevents oder kulturelle Veranstaltungen an. Gerne beraten wir Sie individuell zu Ihren Wünschen und erstellen ein passendes Angebot. Für Anfragen jeglicher Art wenden Sie sich bitte
+Text:
+
+Wir freuen uns ihren Feierlichkeiten jeglicher Art bei uns einen schönen Raum zu bieten. Für Reservierungen beraten wir Sie gerne individuell zu Ihren Wünschen und erstellen ein passendes Angebot. Schreiben Sie uns eine E-Mail an:
 [mail@cafetiergarten.berlin](mailto:mail@cafetiergarten.berlin)
+Um auf dem Laufenden zu bleiben, können Sie sich hier in unseren Newsletter eintragen:
+
+----
+
+Uuid: KTo8baH6Mfst6nFR

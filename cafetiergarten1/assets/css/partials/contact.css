@@ -35,40 +35,40 @@
 /*Newsletter Container Button*/
 .embeddable-buttondown-form {
   margin-top: 1.5rem;
+  width: 100%;
   text-align: left; /* oder center, wenn mittig */
 }
 
-/* Label kann optional verschwinden */
 .embeddable-buttondown-form label {
-  display: none; /* falls du es nicht brauchst */
+  display: none;
 }
 
-/* Input-Feld: nur Unterstrich */
 .embeddable-buttondown-form input[type="email"] {
   width: 100%;
   padding: 0.5rem 0;
   border: none;
-  border-bottom: 1px solid #CF3212;
+  border-bottom: 1px solid black;
   background: transparent;
   font-size: 1rem;
   font-family: inherit;
   outline: none;
+  align-items: left;
+  font-family: 'BerlinTypeWeb', sans-serif;
 }
 
 /* Button minimalistisch, andere Schrift */
 .embeddable-buttondown-form input[type="submit"] {
   margin-top: 0.8rem;
+  width: 100%;
+  align-items: last baseline;
   background: none;
   border: none;
-  color: #CF3212;
   font-size: 1rem;
   cursor: pointer;
-
-  font-family: 'Honeymoon'
   font-weight: 300;
-  text-transform: uppercase;
   letter-spacing: 0.05em;
   padding: 0;
+  font-family: 'BerlinTypeWeb', sans-serif;
 }
 
 .embeddable-buttondown-form input[type="submit"]:hover {

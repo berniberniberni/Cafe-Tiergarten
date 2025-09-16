@@ -6,7 +6,60 @@
   background-image: var(--bg);
   background-image: 100%;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: top center;
   background-size: contain;
   display: flex;
+}
+
+.main-gallery{
+  position: relative;
+  min-height: 72vh;
+  /* Hintergrund aus dem inline --bg vom Template */
+  background: center / contain no-repeat var(--bg);
+  /* Optional: etwas Innenabstand, damit Bildränder nicht abgeschnitten werden */
+  padding: 1rem;
+}
+
+/* Jedes Gemälde absolut auf dem Grundriss positionieren */
+.painting{
+  position: absolute;
+  margin: 0;
+}
+
+.painting img{
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0,0,0,.15);
+}
+
+/* Hover-Beschriftung */
+.painting figcaption{
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: .5rem .65rem;
+  background: rgba(0,0,0,.72);
+  color: #fff;
+  font-size: .9rem;
+  line-height: 1.25;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity .18s ease, transform .18s ease;
+  pointer-events: none; /* keine Klicks abfangen */
+}
+
+/* Anzeigen bei Hover/Focus (auch Tastaturbedienung) */
+.painting:hover figcaption,
+.painting:focus-within figcaption{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Kleine Ansicht – größere Klickflächen sind angenehmer */
+@media (max-width: 720px){
+  .main-gallery{ min-height: 60vh; }
+  .painting figcaption{ font-size: .95rem; }
 }

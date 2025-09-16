@@ -1,3 +1,9 @@
 Title: Shop
+
 ----
+
 Text: Link zum Shopify Shop
+
+----
+
+Uuid: z9ICs2ZAqeIZLSxT

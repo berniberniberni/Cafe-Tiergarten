@@ -1,0 +1,86 @@
+/* Nur spezielle Styles für die Suche */
+
+.main-search {
+  background-image: var(--bg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 900px;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.search-card {
+  max-width: 42ch;
+  width: 100%;
+  text-align: left;
+}
+
+/* Formular */
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin-bottom: 1.5rem;
+}
+
+.search-form input[type="search"] {
+  flex: 1 1 auto;
+  border: none;
+  border-bottom: 1px solid black;
+  padding: .5rem 0;
+  background: transparent;
+  font-size: 1rem;
+  font-family: 'BerlinTypeWeb', Arial, sans-serif;
+  outline: none;
+}
+
+.search-form button[type="submit"] {
+  background: none;
+  border: none;
+  font: inherit;
+  color: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.search-clear {
+  font-size: .9rem;
+  text-decoration: underline;
+  color: #666;
+}
+
+/* Status */
+.search-status,
+.search-empty {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+/* Ergebnisse */
+.search-results {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.search-item + .search-item {
+  border-top: 1px solid #eee;
+  margin-top: .75rem;
+  padding-top: .75rem;
+}
+
+.search-title {
+  font-weight: 600;
+  font-family: 'BerlinTypeWeb', Arial, sans-serif;
+}
+
+.search-excerpt {
+  display: block;
+  margin-top: .25rem;
+  font-size: .95rem;
+  color: #444;
+  line-height: 1.4;
+}

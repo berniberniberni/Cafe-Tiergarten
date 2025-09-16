@@ -1,0 +1,28 @@
+title: Galerie
+icon: image
+
+tabs:
+  content:
+    label: Inhalt
+    sections:
+      fields:
+        type: fields
+        fields:
+          bg:
+            label: Hintergrund (Grundriss)
+            type: files
+            multiple: false
+            max: 1
+            uploads:
+              template: image
+  paintings:
+    label: Gemälde
+    sections:
+      paintings:
+        type: files
+        template: painting
+        layout: cards
+        size: small
+        image:
+          cover: true
+        info: "{{ file.top }}% / {{ file.left }}% • {{ file.vw }}vw"

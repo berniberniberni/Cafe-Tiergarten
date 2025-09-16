@@ -12,3 +12,5 @@
 @import url('partials/produce.css');
 @import url('partials/contact.css');
 @import url('partials/gallery.css');
+@import url('./partials/gallery.css');
+@import url('./partials/search.css');

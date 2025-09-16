@@ -1,6 +1,9 @@
 Title: Impressum
+
 ----
-text: 
+
+Text:
+
 Café Tiergarten  
 Inhaber: Simon Freund
 Altonaer Straße 3  
@@ -22,3 +25,7 @@ Plattform der EU-Kommission zur Online-Streitbeilegung:
 https://ec.europa.eu/consumers/odr/
 
 Wir sind nicht verpflichtet und nicht bereit, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+
+----
+
+Uuid: 5tcRZcEZaUcyu9UQ

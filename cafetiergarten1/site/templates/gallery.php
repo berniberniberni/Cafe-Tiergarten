@@ -1,6 +1,5 @@
 
 <?php snippet('header') ?>
-
 <body>
   <?php snippet('sidebar') ?>
 
@@ -11,13 +10,28 @@
     </header>
 
     <?php
-    $bg = $page->image('1_grundriss.png') ?? $page->image();
+    // Hintergrund holen: erst Panel-Feld, sonst Fallback auf 1_grundriss.png oder erstes Bild
+    $bg = $page->bg()->toFile() ?? $page->image('1_grundriss.png') ?? $page->image();
     ?>
+<?php foreach ($page->files()->template('painting') as $painting): ?>
+  <?php
+    $top    = $painting->top()->or('0');
+    $left   = $painting->left()->or('0');
+    $width  = $painting->vw()->or('20');    // <— hier
+    $rotate = $painting->rotate()->or('0');
+    $z      = $painting->z()->or('1');
+  ?>
+  <figure class="painting"
+    style="top:<?= $top ?>%; left:<?= $left ?>%; width:<?= $width ?>vw; transform:rotate(<?= $rotate ?>deg); z-index:<?= $z ?>;">
+    <img src="<?= $painting->url() ?>" srcset="<?= $painting->srcset() ?>"
+         alt="<?= $painting->alt()->or($painting->filename()) ?>">
+    <?php if ($painting->caption()->isNotEmpty()): ?>
+      <figcaption><?= $painting->caption()->kti() ?></figcaption>
+    <?php endif ?>
+  </figure>
+<?php endforeach ?>
 
-    <main class="main-gallery" style="--bg:url('<?= $bg?->url() ?>')">
-      
-    </main>
-      <?php snippet('footer') ?>
+    <?php snippet('footer') ?>
   </div>
 </body>
 </html>

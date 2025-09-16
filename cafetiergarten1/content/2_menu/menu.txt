@@ -1,7 +1,9 @@
 Title: Menü
+
 ----
 
 Drinks:
+
 - name: Filterkaffee
   description: verschiedene Sorten • ausgewählt von tornqvist
   price: 3,50 €
@@ -78,9 +80,11 @@ Drinks:
 - name: IESSI
   description: alkoholfreier Aperitif aus Italien• 0,33l
   price: 7,50 €
+
 ----
 
 Food:
+
 - name: Croissant
   description: Sauerteig • 100% Butter
   price: 3,50 €
@@ -111,3 +115,7 @@ Food:
 - name: Eis 
   description: Paleta Eis am Stiel • verschiedene Sorten • vegan
   price: 3,50 €
+
+----
+
+Uuid: CS7w4G04JaUT8yHK
