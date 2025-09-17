@@ -1,7 +1,10 @@
 Title: Menü
 
 ----
+Intro: >
+  Neben unserem festen Menü bieten wir regelmäßig wechselnde Speisen an, wie zum Beispiel Mittwochs die Focaccia von Pepi und Sonntags Specials von befreundeten Köch*innen. Schaut für Updates auf unserem [Instagram](https://instagram.com/cafetiergarten) vorbei oder tragt euch in unseren ein [Newsletter](../contact) ein.
 
+----
 Drinks:
 
 - name: Filterkaffee

@@ -6,6 +6,9 @@ columns:
       content:
         type: fields
         fields:
+          intro:
+            label: Einführungstext
+            type: textarea
           drinks:
             label: Getränke
             type: structure
@@ -19,7 +22,6 @@ columns:
               price:
                 label: Preis
                 type: text
-
           food:
             label: Speisen
             type: structure
