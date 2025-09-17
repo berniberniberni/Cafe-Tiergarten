@@ -24,7 +24,7 @@ Drinks:
   description: Espresso mit aufgeschäumter Milch
   price: 4,20 €
 - name: Latte Macchiato
-  description: Espresso mit aufgeschäumter Milch und Milchschaum
+  description: Espresso mit aufgeschäumter Milch und Milchschaum  
   price: 4,80 €
 - name: Tee
   description: verschiedene Sorten

@@ -92,7 +92,7 @@
             <?php foreach ($results as $result): ?>
               <li class="search-item">
                 <a class="search-link" href="<?= $result->url() ?>">
-                  <span class="search-title"><?= $result->title()->esc() ?> →</span>
+                  <span class="search-title"><?= $result->title()->esc() ?></span>
                 </a>
               </li>
             <?php endforeach ?>
