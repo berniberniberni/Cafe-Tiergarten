@@ -22,7 +22,7 @@
   <h2>Speisen</h2>
   <ul class="menu-list">
     <?php foreach ($page->food()->toStructure() as $food): ?>
-      <li>
+      <li>  
         <strong><?= $food->name() ?></strong> – <?= $food->price() ?><br>
         <small><?= $food->description() ?></small>
       </li>

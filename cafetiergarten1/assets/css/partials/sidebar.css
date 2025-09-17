@@ -73,8 +73,9 @@
   color: #A0A0A0;
   padding: 0.5rem 1rem;
   outline: none;
-  border: none !important;
-  box-shadow: none !important;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
 }
 .sidebar-search-input::-webkit-search-decoration,
 .sidebar-search-input::-webkit-search-cancel-button,
@@ -97,7 +98,7 @@
   font-size: 1rem;
   cursor: pointer;
   padding: 0 1.25rem 0 0.25rem;
-  text-decoration: none; /* Removed text-decoration */
+  text-decoration: none;
 }
 .sidebar-search-button:hover {
   color: #000;

@@ -36,7 +36,6 @@
           value="<?= esc($query ?? '', 'attr') ?>"
           placeholder="Suche ..."
           autofocus
-          class="search-form-input"
         >
   <button type="submit" aria-label="Suchen"><span aria-hidden="true">→</span></button>
         <!-- clear button removed as requested -->
