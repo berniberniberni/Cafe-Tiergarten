@@ -1,14 +1,15 @@
 /* Nur spezielle Styles für die Suche */
 
 .main-search {
-  background-image: var(--bg);
+  /* behält main-content Layout bei, ergänzt nur Hintergrund */
+  background-image: url('/assets/images/lupe.png');
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 900px;
-  min-height: 70vh;
+  background-position: 30% center;
+  background-size: 800px;
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 70vh;
   padding: 2rem;
 }
 
@@ -21,7 +22,7 @@
 /* Formular */
 .search-form {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   gap: .75rem;
   margin-bottom: 1.5rem;
 }
@@ -35,20 +36,43 @@
   font-size: 1rem;
   font-family: 'BerlinTypeWeb', Arial, sans-serif;
   outline: none;
+  min-width: 120px;
 }
+.search-form label {
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  font-family: 'BerlinTypeWeb', Arial, sans-serif;
+  color: #222;
+  white-space: nowrap;
+}
+
 
 .search-form button[type="submit"] {
   background: none;
   border: none;
   font: inherit;
-  color: inherit;
-  text-decoration: underline;
+  color: #000;
   cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0 0.25rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+input[type="search"].search-form-input::-webkit-search-decoration,
+input[type="search"].search-form-input::-webkit-search-cancel-button,
+input[type="search"].search-form-input::-webkit-search-results-button,
+input[type="search"].search-form-input::-webkit-search-results-decoration,
+.search-form input[type="search"]::-webkit-search-decoration,
+.search-form input[type="search"]::-webkit-search-cancel-button,
+.search-form input[type="search"]::-webkit-search-results-button,
+.search-form input[type="search"]::-webkit-search-results-decoration {
+  display: none;
 }
 
 .search-clear {
   font-size: .9rem;
-  text-decoration: underline;
   color: #666;
 }
 

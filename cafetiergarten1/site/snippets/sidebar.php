@@ -21,7 +21,7 @@
         class="sidebar-search-input"
         autocomplete="off"
       >
-      <button type="submit" class="sidebar-search-button">Suchen</button>
+  <button type="submit" class="sidebar-search-button" aria-label="Suchen"><span aria-hidden="true">→</span></button>
     </form>
   </div>
 </aside>

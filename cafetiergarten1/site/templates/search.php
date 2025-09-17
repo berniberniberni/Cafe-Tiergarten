@@ -36,11 +36,10 @@
           value="<?= esc($query ?? '', 'attr') ?>"
           placeholder="Suche ..."
           autofocus
+          class="search-form-input"
         >
-        <button type="submit">Suchen</button>
-        <?php if ($query): ?>
-          <a class="search-clear" href="<?= url('search') ?>">Zurücksetzen</a>
-        <?php endif ?>
+  <button type="submit" aria-label="Suchen"><span aria-hidden="true">→</span></button>
+        <!-- clear button removed as requested -->
       </form>
 
       <!-- Status / Hinweise -->
@@ -72,23 +71,6 @@
             $text = (string)$page->text();
           }
           $found = stripos($title, $query) !== false || stripos($text, $query) !== false;
-
-          // Special: Also search in menu items (drinks and food)
-          if (!$found && $page->intendedTemplate() === 'menu') {
-            foreach (['drinks', 'food'] as $section) {
-              if ($page->{$section}()->isNotEmpty()) {
-                foreach ($page->{$section}()->toStructure() as $item) {
-                  foreach ($item->content()->data() as $fieldValue) {
-                    if (is_string($fieldValue) && stripos($fieldValue, $query) !== false) {
-                      $found = true;
-                      break 3;
-                    }
-                  }
-                }
-              }
-            }
-          }
-
           // Also search in all listed children (subpages/sections)
           if (!$found) {
             foreach ($page->children()->listed() as $child) {
@@ -111,12 +93,7 @@
             <?php foreach ($results as $result): ?>
               <li class="search-item">
                 <a class="search-link" href="<?= $result->url() ?>">
-                  <span class="search-title"><?= $result->title()->esc() ?></span>
-                  <?php if ($result->text()->isNotEmpty()): ?>
-                    <span class="search-excerpt">
-                      <?= $result->text()->excerpt(140) ?>
-                    </span>
-                  <?php endif ?>
+                  <span class="search-title"><?= $result->title()->esc() ?> →</span>
                 </a>
               </li>
             <?php endforeach ?>
