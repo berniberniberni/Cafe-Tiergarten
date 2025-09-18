@@ -1,0 +1,8 @@
+Title: Eis
+
+----
+
+Text: Paletas Eis bringt die bunte Vielfalt mexikanischer Eiskultur nach Berlin. Die handgemachten Eis am Stiel werden aus frischen Früchten, natürlichen Zutaten und ohne künstliche Zusätze hergestellt. Ob cremig oder fruchtig, vegan oder klassisch – die abwechslungsreichen Sorten bieten für jeden Geschmack das passende Eisvergnügen. Besonders beliebt sind die ausgefallenen Kombinationen wie Mango-Chili oder Erdbeere-Minze, die an heißen Tagen für eine erfrischende Abkühlung sorgen.
+----
+
+Uuid: GxNtQ2KFYgtJGhTa

@@ -1,0 +1,8 @@
+Title: Schokolade
+
+----
+
+Text: Seit Generationen steht der Name Erich Hamann für beliebte Schokoladenkreationen mit edler Bitternote. Neben Schokoladentafeln von Vollmilch bis Extra-Bitter finden Sie hier auch delikat gefüllte Pralinenschachteln und beliebte Klassiker, wie Mokkabohnen und Ingwerstäbchen. Das Sortiment wird in der historischen Originaleinrichtung des Ladengeschäfts aus den 1920er-Jahren präsentiert – und falls Sie sich nicht entscheiden können, ist das fachkundige Personal Ihnen gerne mit Ratschlägen und Informationen behilflich.
+----
+
+Uuid: GxNtQ2KFYgtJGhTa

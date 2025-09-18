@@ -1,0 +1,7 @@
+Title: Chips
+
+----
+
+Text: Patatas fritas sind knusprige, goldgelbe Kartoffelchips, die traditionell in Spanien hergestellt werden. Sie bestehen aus sorgfältig ausgewählten Kartoffeln, die in hochwertigem Sonnenblumenöl gebacken und anschließend leicht gesalzen werden. Das Ergebnis ist ein authentischer, natürlicher Geschmack ohne künstliche Zusätze. Patatas fritas eignen sich perfekt als Snack zwischendurch, als Beilage zu Tapas oder als Begleiter zu einem Glas Wein.
+
+Uuid: GxNtQ2KFYgtJGhTa
