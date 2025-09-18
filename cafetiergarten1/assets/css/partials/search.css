@@ -1,49 +1,64 @@
-/* Nur spezielle Styles für die Suche */
 
 .main-search {
-  /* behält main-content Layout bei, ergänzt nur Hintergrund */
   background-image: url('/assets/images/lupe.png');
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 900px;
+  background-position: 35%;
+  background-size: 800px;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 70vh;
   padding: 2rem;
+  border: none !important;
 }
 
 .search-card {
   max-width: 42ch;
   width: 100%;
   text-align: left;
+  border: none !important;
+
 }
 
-/* Formular */
 .search-form {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   gap: .75rem;
   margin-bottom: 1.5rem;
+  border: none !important;
+
 }
 
 .search-form input[type="search"] {
   flex: 1 1 auto;
-  border: none;
   padding: .5rem 0;
   background: transparent;
   font-size: 1rem;
   font-family: 'BerlinTypeWeb', Arial, sans-serif;
   outline: none;
+  min-width: 120px;
+  border: none !important;
+
+}
+.search-form label {
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  font-family: 'BerlinTypeWeb', Arial, sans-serif;
+  color: #222;
+  white-space: nowrap;
 }
 
 .search-form button[type="submit"] {
   background: none;
-  border: none;
   font: inherit;
-  color: inherit;
-  text-decoration: underline;
   cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0 0.25rem;
+  margin-right: 0.5rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border: none !important;
 }
 
 .search-clear {
@@ -74,7 +89,7 @@
 .search-title {
   font-weight: 600;
   font-family: 'BerlinTypeWeb', Arial, sans-serif;
-}
+} 
 
 .search-excerpt {
   display: block;
@@ -82,4 +97,30 @@
   font-size: .95rem;
   color: #444;
   line-height: 1.4;
+}
+
+
+/* Reset fieldset/legend default borders */
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none !important;
+  outline: none !important;
+  background: transparent;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+   border: none !important;
+  outline: none !important;
 }

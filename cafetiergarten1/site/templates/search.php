@@ -93,6 +93,11 @@
               <li class="search-item">
                 <a class="search-link" href="<?= $result->url() ?>">
                   <span class="search-title"><?= $result->title()->esc() ?></span>
+                  <?php if ($result->text()->isNotEmpty()): ?>
+                    <span class="search-excerpt">
+                      <?= $result->text()->excerpt(140) ?>
+                    </span>
+                  <?php endif ?>
                 </a>
               </li>
             <?php endforeach ?>

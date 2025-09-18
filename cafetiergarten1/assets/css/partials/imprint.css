@@ -1,0 +1,21 @@
+.main-content.imprint-centered {
+	display: grid;
+	place-items: center;
+	padding: 2rem;
+}
+
+.imprint-card {
+  max-width: 40ch;       
+  line-height: 1.6;
+  font-size: 1rem;
+
+  display: flex;         
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: justify;
+  text-justify: inter-word; 
+  padding: 2rem;
+
+}
