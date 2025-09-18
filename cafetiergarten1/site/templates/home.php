@@ -5,9 +5,11 @@
 
  <div class="page-container">
     <header class="header">
-      <h1><?= $page->title() ?></h1>
+      <div style="display: flex; align-items: center; width: 100%; position: relative;">
+        <h1 style="margin: 0; flex: 0 0 auto;"><?= $page->title() ?></h1>
+        <div class="status-message" id="statusMessage" style="position: absolute; left: 50%; transform: translateX(-50%);"></div>
+      </div>
       <link rel="stylesheet" href="<?= url('assets/css/main.css') ?>">
-      <div class="status-message" id="statusMessage"></div>
     </header>
 
     <main class="main-content">
@@ -26,7 +28,6 @@
         <img src="<?= url('assets/images/radish_tomate_plum.png') ?>" class="draggable" alt="Radieschen" draggable="true">
         <img src="<?= url('assets/images/coffee.png') ?>" class="draggable" alt="coffee" draggable="true">
         <img src="<?= url('assets/images/citrus.png') ?>" class="draggable" alt="Zitronen" draggable="true">
-        <img src="<?= url('assets/images/blumis.png') ?>" class="draggable" alt="Blumen" draggable="true">
       </div>
 
         <div id="drop-area">  </div> <!-- Drop Area -->

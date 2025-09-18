@@ -61,12 +61,13 @@
 
 .sidebar-search-form {
   display: flex;
-  width: 100%;
-  gap: 0.5rem;
+  align-items: center;
+  width: auto;
+  gap: 0;
 }
 
 .sidebar-search-input {
-  flex: 1 1 auto;
+  width: 140px;
   background: transparent;
   font-size: 1rem;
   font-family: 'BerlinTypeWeb', Arial, sans-serif;
@@ -74,6 +75,7 @@
   padding: 0.5rem 1rem;
   outline: none;
   border-bottom: none;
+  box-sizing: border-box;
 }
 .sidebar-search-input::-webkit-search-decoration,
 .sidebar-search-input::-webkit-search-cancel-button,
@@ -91,7 +93,7 @@
 .sidebar-search-button {
   background: none;
   border: none;
-  color: #CF3212;
+  color: #000;
   font-family: 'BerlinTypeWeb', Arial, sans-serif;
   font-size: 1rem;
   cursor: pointer;
