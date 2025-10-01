@@ -1,8 +1,8 @@
 Title: Café Tiergarten
 ----
-email: info@cafetiergarten.com
+email: mail@cafetiergarten.berlin
 ----
-phone: +49 30 123456
+phone: 01733742908
 ----
 address: Altonaer Straße 3, 10557 Berlin
 ----

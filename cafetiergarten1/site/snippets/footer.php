@@ -2,16 +2,12 @@
   <div class="footer-section footer-left">
     <p>Email: <a href="mailto:<?= $site->email() ?>"><?= $site->email() ?></a></p>
     <p>Phone: <a href="tel:<?= $site->phone() ?>"><?= $site->phone() ?></a></p>
-  <p> Instagram: <a href="https://www.instagram.com/cafetiergarten" target="_blank" rel="noopener noreferrer">cafetiergarten</a></p>
+    <p> Instagram: <a href="<?= $site->instagram() ?>" target="_blank" rel="noopener noreferrer">cafetiergarten</a></p>
   </div>
 
   <div class="footer-section footer-center">
     <p><?= $site->title() ?></p>
-    <p>
-      <a href="https://www.google.com/maps/search/?api=1&query=Altonaer+Stra%C3%9Fe+3,+10557+Berlin" target="_blank" rel="noopener noreferrer">
-        <?= $site->address() ?>
-      </a>
-    </p>
+    <p><?= $site->address() ?></p>
   </div>
 
   <div class="footer-section footer-right">
