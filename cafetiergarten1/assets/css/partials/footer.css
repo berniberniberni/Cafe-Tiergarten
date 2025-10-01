@@ -38,16 +38,37 @@
   text-align: right;
 }
 
-/* Responsive: Footer stacks on mobile */
+/* Responsive: Footer columns stacked vertically on mobile */
 @media (max-width: 768px) { 
   .footer {
-    flex-direction: column;
+    flex-direction: column; /* Stack columns vertically */
     text-align: center;
-    gap: 0.5rem;
+    gap: 1rem;
+    border-top: 0.5px solid #CF3212; /* Red line only above footer */
+    padding: 1.5rem 1rem;
+    margin-top: 2rem; /* Space above footer */
   }
 
   .footer-section {
+    width: 100%;
     align-items: center;
     text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-section:last-child {
+    margin-bottom: 0;
+  }
+  
+  .footer-section p {
+    margin: 0.5rem 0;
+    font-size: 1rem; /* Readable text size */
+    line-height: 1.4;
+  }
+  
+  .footer-section a {
+    font-size: 1rem;
+    padding: 0.5rem;
+    display: inline-block;
   }
 }

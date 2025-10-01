@@ -15,3 +15,5 @@
 @import url('./partials/gallery.css');
 @import url('./partials/search.css');
 @import url('./partials/imprint.css');
+@import url('partials/_responsive.css');
+@import url('partials/mobile-force.css');

@@ -11,8 +11,14 @@
     </header>
 
     <main class="main-content">
+      
+      <!-- Mobile Hero Image -->
+      <div class="mobile-welcome">
+        <img src="<?= url('assets/images/mobile_image.png') ?>" alt="Café Tiergarten" class="mobile-hero-image">
+      </div>
   
-      <div class="table-area" id="table-area">
+      <!-- Desktop Game Area -->
+      <div class="table-area desktop-only" id="table-area">
         <img src="<?= url('assets/images/colaundwein.png') ?>" class="draggable" alt="colaundwein" draggable="true">
         <img src="<?= url('assets/images/brot.png') ?>" class="draggable" alt="Brotkorb" draggable="true">
         <img src="<?= url('assets/images/kirsche.png') ?>" class="draggable" alt="Kirschmochi" draggable="true">
@@ -29,7 +35,7 @@
         <img src="<?= url('assets/images/blumis.png') ?>" class="draggable" alt="Blumen" draggable="true">
       </div>
 
-        <div id="drop-area">  </div> <!-- Drop Area -->
+        <div id="drop-area" class="desktop-only">  </div> <!-- Drop Area -->
     </main>
 
     <?php snippet('footer') ?>

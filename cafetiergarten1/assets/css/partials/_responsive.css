@@ -1,13 +1,58 @@
 @media (max-width: 768px) {
+  /* Mobile: Change layout to vertical stack */
+  body {
+    flex-direction: column;
+  }
+  
+  /* Compact top navigation */
   .sidebar {
     width: 100%;
     height: auto;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     border-right: none;
-    border-bottom: 0.5px solid #CF3212;
+    border-bottom: none;
     position: relative;
+    padding: 0.5rem 1rem;
+    order: -1; /* Move sidebar to top */
+  }
+  
+  .sidebar-title {
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .sidebar-title a {
+    font-size: 1.2rem;
+  }
+  
+  /* Horizontal compact menu */
+  .menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-bottom: 0;
+  }
+  
+  .menu a {
+    font-size: 0.9rem;
+    padding: 0.25rem 0.5rem;
+  }
+  
+  .page-container {
+    border: none !important;
+  }
+  
+  .main-content {
+    border: none !important;
   }
 
   .logo {
@@ -48,6 +93,59 @@
   }
 
   .search {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
+    position: static;
+    transform: none;
+    width: auto;
+    justify-content: center;
+  }
+  
+  /* Full width main content on mobile */
+  .page-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .main-content {
+    width: 100%;
+    margin-left: 0;
+    padding: 1rem;
+  }
+
+  /* Homepage: Hide game on mobile, show welcome message */
+  .desktop-only,
+  .table-area,
+  #table-area,
+  #drop-area,
+  .draggable {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    position: absolute !important;
+    left: -9999px !important;
+  }
+
+  .mobile-welcome {
+    display: block;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 1.2rem;
+    color: #333;
+    font-family: 'BerlinTypeWeb', Arial, sans-serif;
+  }
+
+  .mobile-welcome p {
+    margin: 0 0 2rem 0;
+    line-height: 1.4;
+  }
+  
+  /* Mobile hero image */
+  .mobile-hero-image {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 8px;
   }
 }

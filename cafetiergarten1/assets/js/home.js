@@ -1,4 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
+  // Don't run game on mobile devices
+  if (window.innerWidth <= 768) {
+    return;
+  }
+  
   const draggables = document.querySelectorAll('.draggable');
   const tableArea = document.querySelector('.table-area');
 

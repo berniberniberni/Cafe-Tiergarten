@@ -1,0 +1,194 @@
+/* Force mobile layout - highest specificity - FOR ALL PAGES */
+@media screen and (max-width: 768px) {
+  /* FORCE mobile layout structure FOR ALL PAGES */
+  body {
+    flex-direction: column !important;
+    display: flex !important;
+    min-height: 100vh !important;
+    height: auto !important;
+    overflow-y: auto !important; /* Enable vertical scrolling */
+    overflow-x: hidden !important;
+  }
+  
+  .page-container {
+    flex-direction: column !important;
+    display: flex !important;
+    width: 100% !important;
+    flex: 1 !important;
+    min-height: auto !important; /* Let content determine height */
+    height: auto !important;
+    overflow: visible !important;
+  }
+  
+  /* FORCE sidebar to top, compact - FOR ALL PAGES */
+  body .sidebar {
+    width: 100% !important;
+    height: auto !important;
+    flex-direction: column !important;
+    order: -1 !important;
+    padding: 0.75rem 1rem !important;
+    border-right: none !important;
+    border-bottom: none !important;
+    position: static !important;
+  }
+  
+  /* FORCE compact navigation menu - FOR ALL PAGES */
+  body .sidebar .menu ul {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    gap: 0.8rem !important;
+    margin: 0.5rem 0 !important;
+    padding: 0 !important;
+  }
+  
+  body .sidebar .menu li {
+    margin-bottom: 0 !important;
+  }
+  
+  body .sidebar .menu a {
+    font-size: 0.9rem !important;
+    padding: 0.3rem 0.6rem !important;
+  }
+  
+  body .sidebar .search {
+    margin-top: 0.5rem !important;
+    position: static !important;
+    transform: none !important;
+    width: auto !important;
+    justify-content: center !important;
+  }
+  
+  /* FORCE main content full width - FOR ALL PAGES */
+  body .main-content {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 1rem !important;
+    flex: 1 !important;
+    min-height: auto !important; /* Let content determine height */
+    overflow: visible !important; /* Ensure content is not cut off */
+  }
+  
+  /* FORCE hide all game elements */
+  body .page-container .main-content .table-area,
+  body .page-container .main-content #table-area,
+  body .page-container .main-content #drop-area,
+  body .page-container .main-content .draggable,
+  body .page-container .main-content .desktop-only {
+    display: none !important;
+    visibility: hidden !important;
+    position: absolute !important;
+    left: -10000px !important;
+    top: -10000px !important;
+    width: 0 !important;
+    height: 0 !important;
+    opacity: 0 !important;
+  }
+  
+  /* FORCE show mobile elements */
+  body .page-container .main-content .mobile-welcome {
+    display: block !important;
+    visibility: visible !important;
+    position: static !important;
+    opacity: 1 !important;
+    text-align: center !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  
+  body .page-container .main-content .mobile-hero-image {
+    display: block !important;
+    visibility: visible !important;
+    position: static !important;
+    opacity: 1 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 1rem 0 4rem 0 !important; /* More space top and bottom */
+    padding: 0 !important;
+    object-fit: contain !important; /* Ensure full image is visible */
+  }
+  
+  /* Remove ALL borders on mobile */
+  body .sidebar,
+  body .page-container,
+  body .main-content,
+  body .header {
+    border: none !important;
+    border-right: none !important;
+    border-left: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+  }
+  
+  /* FORCE all 2-column layouts to stack vertically */
+  body .main-content .section-content,
+  body .main-content .about-content,
+  body .main-content .menu-content,
+  body .main-content .produce-content,
+  body .main-content div[style*="display: flex"],
+  body .main-content div[style*="flex-direction: row"] {
+    flex-direction: column !important;
+    display: flex !important;
+  }
+  
+  /* FORCE all flex items to full width on mobile */
+  body .main-content .section-content > *,
+  body .main-content .about-content > *,
+  body .main-content .menu-content > *,
+  body .main-content .produce-content > * {
+    width: 100% !important;
+    flex: none !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  /* HIDE page title H1 on mobile (especially 'home') */
+  body .header h1 {
+    display: none !important;
+    visibility: hidden !important;
+  }
+  
+  /* FORCE overflow visible on ALL elements that might block scrolling */
+  html, body, .page-container, .main-content {
+    overflow: visible !important;
+    height: auto !important;
+    max-height: none !important;
+  }
+  
+  body {
+    overflow-y: auto !important; /* Allow vertical scrolling */
+  }
+  
+  /* FORCE footer to bottom, accessible by scroll - FULL CONTENT VISIBLE */
+  body .footer {
+    display: flex !important;
+    visibility: visible !important;
+    position: static !important;
+    margin-top: 3rem !important; /* More space above footer */
+    flex-shrink: 0 !important;
+    width: 100% !important;
+    flex-direction: column !important; /* Stack footer sections vertically */
+  }
+  
+  /* FORCE all footer sections visible on mobile */
+  body .footer .footer-section {
+    display: block !important;
+    visibility: visible !important;
+    width: 100% !important;
+    text-align: center !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  body .footer .footer-section p {
+    display: block !important;
+    visibility: visible !important;
+    margin: 0.5rem 0 !important;
+    font-size: 1rem !important;
+  }
+  
+  body .footer .footer-section a {
+    display: inline !important;
+    visibility: visible !important;
+  }
+}

@@ -6,6 +6,21 @@
   box-sizing: border-box;
 }
 
+/* Hide mobile welcome message on desktop, show desktop-only elements */
+@media (min-width: 769px) {
+  .mobile-welcome {
+    display: none !important;
+  }
+  
+  .desktop-only {
+    display: block !important;
+  }
+  
+  .mobile-hero-image {
+    display: none !important;
+  }
+}
+
 /* Inhalt innerhalb vom Main (Text) */
 .main-content p {
   margin-bottom: 1rem;
