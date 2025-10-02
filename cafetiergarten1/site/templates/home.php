@@ -21,14 +21,13 @@
       <div class="table-area desktop-only" id="table-area">
         <img src="<?= url('assets/images/colaundwein.png') ?>" class="draggable" alt="colaundwein" draggable="true">
         <img src="<?= url('assets/images/brot.png') ?>" class="draggable" alt="Brotkorb" draggable="true">
-        <img src="<?= url('assets/images/kirsche.png') ?>" class="draggable" alt="Kirschmochi" draggable="true">
+        <img src="<?= url('assets/images/mochi.png') ?>" class="draggable" alt="Kirschmochi" draggable="true">
         <img src="<?= url('assets/images/silberschale.png') ?>" class="draggable" alt="silberschale" draggable="true">
         <img src="<?= url('assets/images/silberdose.png') ?>" class="draggable" alt="silberdose" draggable="true">
         <img src="<?= url('assets/images/oliven.png') ?>" class="draggable" alt="oliven" draggable="true">
         <img src="<?= url('assets/images/teigtaschen.png') ?>" class="draggable" alt="teigtaschen" draggable="true">
-        <img src="<?= url('assets/images/Granita_Sahne.png') ?>" class="draggable" alt="Granita" draggable="true">
+        <img src="<?= url('assets/images/granita.png') ?>" class="draggable" alt="Granita" draggable="true">
         <img src="<?= url('assets/images/lampe.png') ?>" class="draggable" alt="Lampe" draggable="true">
-        <img src="<?= url('assets/images/GräflicheSpeise.png') ?>" class="draggable" alt="Bowl" draggable="true">
         <img src="<?= url('assets/images/radish_tomate_plum.png') ?>" class="draggable" alt="Radieschen" draggable="true">
         <img src="<?= url('assets/images/coffee.png') ?>" class="draggable" alt="coffee" draggable="true">
         <img src="<?= url('assets/images/citrus.png') ?>" class="draggable" alt="Zitronen" draggable="true">

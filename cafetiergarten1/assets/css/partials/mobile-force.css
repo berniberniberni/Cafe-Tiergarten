@@ -249,6 +249,7 @@
     width: 100% !important;
     margin-bottom: 1.5rem !important;
     padding: 0 !important;
+    margin-left: 0 !important;
     font-size: 0.95rem !important;
     line-height: 1.5 !important;
     background-color: transparent !important;
@@ -264,12 +265,20 @@
   body .main-content .menu-intro a {
     color: black !important;
     text-decoration: none !important;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1) !important;
+    touch-action: manipulation !important;
+    cursor: pointer !important;
   }
   
   body.menu .menu-intro a:hover,
-  body .main-content .menu-intro a:hover {
+  body.menu .menu-intro a:focus,
+  body.menu .menu-intro a:active,
+  body .main-content .menu-intro a:hover,
+  body .main-content .menu-intro a:focus,
+  body .main-content .menu-intro a:active {
     color: black !important;
     text-decoration: underline !important;
+    outline: none !important;
   }
   
   /* Style menu lists for mobile */
@@ -370,5 +379,247 @@
   body .main-content .mobile-section img {
     border: none !important;
     box-shadow: none !important;
+  }
+
+  /* MOBILE CONTACT & SEARCH PAGES SPECIFIC STYLES */
+  
+  /* Hide desktop search and contact layouts on mobile */
+  body .main-search.desktop-layout,
+  body .main-search:not(.mobile-search),
+  body .main-contact:not(.mobile-contact) {
+    display: none !important;
+    visibility: hidden !important;
+  }
+  
+  /* Show mobile contact layout */
+  body .mobile-contact {
+    display: block !important;
+    visibility: visible !important;
+    width: 428px !important;
+    max-width: 100vw !important;
+    min-width: 320px !important;
+    padding: 11px 16px !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+  }
+  
+  /* Show mobile search layout */
+  body .mobile-search {
+    display: block !important;
+    visibility: visible !important;
+    width: 428px !important;
+    max-width: 100vw !important;
+    min-width: 320px !important;
+    padding: 11px 16px !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+  }
+  
+  /* Mobile contact content */
+  body .mobile-contact-content,
+  body .mobile-search-content {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 1.5rem !important;
+  }
+  
+  /* Mobile decorative images - organic positioning */
+  body .mobile-decorative-image {
+    width: 60px !important;
+    height: 60px !important;
+    display: flex !important;
+    align-items: center !important;
+    margin: 1rem 0 !important;
+    align-self: flex-start !important;
+  }
+  
+  /* Different organic positions for top and bottom images */
+  body .mobile-decorative-top {
+    justify-content: flex-end !important; /* Right side */
+    margin-right: 15% !important;
+    transform: rotate(-5deg) !important; /* Slight rotation for organic feel */
+  }
+  
+  body .mobile-decorative-bottom {
+    justify-content: flex-start !important; /* Left side */
+    margin-left: 25% !important;
+    transform: rotate(3deg) !important; /* Different rotation */
+  }
+  
+  /* Contact page specific positioning (more variation) */
+  body .mobile-contact .mobile-decorative-top {
+    justify-content: flex-start !important; /* Left for contact */
+    margin-left: 10% !important;
+    margin-right: 0 !important;
+    transform: rotate(8deg) !important;
+  }
+  
+  body .mobile-contact .mobile-decorative-bottom {
+    justify-content: flex-end !important; /* Right for contact */
+    margin-right: 15% !important;
+    margin-left: 0 !important;
+    transform: rotate(-7deg) !important;
+  }
+  
+  /* Search page specific positioning (different from contact) */
+  body .mobile-search .mobile-decorative-top {
+    justify-content: center !important; /* Center but offset */
+    margin-left: 35% !important;
+    transform: rotate(-3deg) !important;
+  }
+  
+  body .mobile-search .mobile-decorative-bottom {
+    justify-content: flex-start !important;
+    margin-left: 5% !important;
+    transform: rotate(6deg) !important;
+  }
+  
+  /* Enhanced mobile touch interaction for all links and buttons */
+  body a,
+  body button,
+  body input[type="submit"],
+  body .clickable {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1) !important;
+    touch-action: manipulation !important;
+    cursor: pointer !important;
+  }
+  
+  body a:active,
+  body button:active,
+  body input[type="submit"]:active {
+    transform: scale(0.98) !important;
+    transition: transform 0.1s ease !important;
+  }
+  
+  body .mobile-decorative-image img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    border: none !important;
+    border-radius: 0 !important;
+  }
+  
+  /* Mobile text content */
+  body .contact-text-content,
+  body .search-text-content {
+    width: 100% !important;
+    text-align: left !important;
+  }
+  
+  body .contact-text-content p,
+  body .search-text-content p {
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    color: black !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  /* Mobile Newsletter Form - Desktop Style */
+  body .mobile-newsletter-form {
+    width: 100% !important;
+    margin: 1.5rem 0 !important;
+    text-align: left !important;
+  }
+  
+  body .mobile-newsletter-form label {
+    display: none !important;
+  }
+  
+  body .mobile-newsletter-form input[type="email"] {
+    width: 100% !important;
+    padding: 0.5rem 0 !important;
+    border: none !important;
+    border-bottom: 1px solid black !important;
+    background: transparent !important;
+    font-size: 1rem !important;
+    font-family: 'BerlinTypeWeb', sans-serif !important;
+    outline: none !important;
+    margin-bottom: 0 !important;
+    box-sizing: border-box !important;
+  }
+  
+  body .mobile-newsletter-form input[type="submit"] {
+    margin-top: 0.8rem !important;
+    width: 100% !important;
+    background: none !important;
+    border: none !important;
+    font-size: 1rem !important;
+    cursor: pointer !important;
+    font-weight: 300 !important;
+    letter-spacing: 0.05em !important;
+    padding: 0 !important;
+    font-family: 'BerlinTypeWeb', sans-serif !important;
+    color: black !important;
+    text-align: left !important;
+  }
+  
+  body .mobile-newsletter-form input[type="submit"]:hover {
+    text-decoration: underline !important;
+  }
+
+  /* Mobile Search Form - Desktop Style */
+  body .mobile-search-form {
+    width: 100% !important;
+    margin: 1rem 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.75rem !important;
+  }
+  
+  body .mobile-search-form label {
+    display: none !important;
+  }
+  
+  body .mobile-search-form input[type="search"] {
+    flex: 1 1 auto !important;
+    padding: 0.5rem 0 !important;
+    background: transparent !important;
+    font-size: 1rem !important;
+    font-family: 'BerlinTypeWeb', Arial, sans-serif !important;
+    outline: none !important;
+    border: none !important;
+    min-width: 120px !important;
+  }
+  
+  body .mobile-search-form button {
+    background: none !important;
+    font: inherit !important;
+    cursor: pointer !important;
+    font-size: 1.2rem !important;
+    padding: 0 0.25rem !important;
+    margin-right: 0.5rem !important;
+    display: flex !important;
+    align-items: center !important;
+    text-decoration: none !important;
+    border: none !important;
+    color: black !important;
+  }
+  
+  /* Mobile search results */
+  body .mobile-search-results {
+    width: 100% !important;
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 1rem 0 !important;
+  }
+  
+  body .mobile-search-result {
+    width: 100% !important;
+    margin-bottom: 1rem !important;
+    padding: 1rem 0 !important;
+    border-bottom: 1px solid #eee !important;
+  }
+  
+  body .mobile-search-result a {
+    color: black !important;
+    text-decoration: none !important;
+  }
+  
+  body .mobile-search-result h3 {
+    font-size: 1.1rem !important;
+    margin: 0 !important;
+    color: black !important;
   }
 }

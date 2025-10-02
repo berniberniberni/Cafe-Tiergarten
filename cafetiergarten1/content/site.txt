@@ -6,7 +6,7 @@ phone: 01733742908
 ----
 address: Altonaer Straße 3, 10557 Berlin
 ----
-instagram: cafetiergarten https://instagram.com/cafetiergarten
+instagram: https://www.instagram.com/cafetiergarten
 ----
 impressum: /legal-notice
 Datenschutz: /data-privacy

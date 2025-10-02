@@ -40,13 +40,42 @@
     height: auto !important;
   }
   
-  /* Desktop Layout for Info & Produkte pages */
+  /* Desktop Layout for all pages */
   .desktop-layout {
     display: block !important;
     visibility: visible !important;
   }
   
-  .mobile-integrated-content {
+  /* Show original contact layout on desktop */
+  .main-contact {
+    display: grid !important;
+    visibility: visible !important;
+    place-items: center !important;
+    background-image: var(--bg) !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: 900px !important;
+    flex: 1 1 auto !important;
+    padding: 2rem !important;
+  }
+  
+  /* Show original search layout on desktop */
+  .main-search {
+    display: flex !important;
+    visibility: visible !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background-image: url('/assets/images/lupe.png') !important;
+    background-repeat: no-repeat !important;
+    background-position: 35% !important;
+    background-size: 800px !important;
+    min-height: 70vh !important;
+    padding: 2rem !important;
+  }
+  
+  .mobile-integrated-content,
+  .mobile-contact,
+  .mobile-search {
     display: none !important;
     visibility: hidden !important;
   }
