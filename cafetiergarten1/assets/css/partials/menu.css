@@ -28,6 +28,30 @@
   border-top: 0.5px solid #CF3212;
 }
 
+/* Menu Intro Styling */
+.menu-intro {
+  margin-bottom: 2rem;
+  padding: 0;
+  background-color: transparent;
+  background: none;
+  border: none;
+  border-left: none;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: black;
+  text-align: left;
+}
+
+.menu-intro a {
+  color: black;
+  text-decoration: none;
+}
+
+.menu-intro a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
 
 .section-title {
   font-family: 'BerlinTypeWeb', sans-serif;

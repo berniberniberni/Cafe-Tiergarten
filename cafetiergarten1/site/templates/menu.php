@@ -9,6 +9,13 @@
     <main class="main-content two-columns">
 
     <div class="text-column scroll">
+      
+      <!-- Menu Intro Text -->
+      <?php if ($page->intro()->isNotEmpty()): ?>
+        <div class="menu-intro">
+          <?= $page->intro()->kt() ?>
+        </div>
+      <?php endif ?>
   <h2>Getränke</h2>
   <ul class="menu-list">
     <?php foreach ($page->drinks()->toStructure() as $drink): ?>

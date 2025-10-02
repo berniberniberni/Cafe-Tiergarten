@@ -123,6 +123,7 @@
   }
   
   /* FORCE all 2-column layouts to stack vertically */
+  body .main-content.two-columns,
   body .main-content .section-content,
   body .main-content .about-content,
   body .main-content .menu-content,
@@ -131,6 +132,8 @@
   body .main-content div[style*="flex-direction: row"] {
     flex-direction: column !important;
     display: flex !important;
+    width: 100% !important;
+    max-width: 100vw !important;
   }
   
   /* FORCE all flex items to full width on mobile */
@@ -190,5 +193,114 @@
   body .footer .footer-section a {
     display: inline !important;
     visibility: visible !important;
+  }
+
+  /* MOBILE MENU SPECIFIC STYLES */
+  
+  /* FORCE menu page to single column layout - HIGHEST SPECIFICITY */
+  body .main-content.two-columns,
+  body.menu .main-content.two-columns,
+  body .page-container .main-content.two-columns {
+    display: flex !important;
+    width: 428px !important;
+    max-width: 100vw !important;
+    min-width: 320px !important;
+    padding: 11px 16px !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 10px !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+    /* Override any grid or other layouts */
+    grid-template-columns: none !important;
+    grid-template-rows: none !important;
+  }
+  
+  /* Hide the center line on mobile for menu pages */
+  body.menu .main-content::before,
+  body .main-content::before {
+    display: none !important;
+  }
+  
+  /* FORCE menu text column full width */
+  body.menu .text-column,
+  body .main-content .text-column {
+    width: 100% !important;
+    flex: none !important;
+    order: 1 !important;
+    max-height: none !important;
+    overflow: visible !important;
+  }
+  
+  /* FORCE menu image column full width, below text */
+  body.menu .image-column,
+  body .main-content .image-column {
+    width: 100% !important;
+    flex: none !important;
+    order: 2 !important;
+    margin-top: 2rem !important;
+    max-height: none !important;
+    overflow: visible !important;
+  }
+  
+  /* Style menu intro text */
+  body.menu .menu-intro,
+  body .main-content .menu-intro {
+    width: 100% !important;
+    margin-bottom: 1.5rem !important;
+    padding: 0 !important;
+    font-size: 0.95rem !important;
+    line-height: 1.5 !important;
+    background-color: transparent !important;
+    background: none !important;
+    border: none !important;
+    border-left: none !important;
+    color: black !important;
+    text-align: left !important;
+  }
+  
+  /* Style menu intro text links */
+  body.menu .menu-intro a,
+  body .main-content .menu-intro a {
+    color: black !important;
+    text-decoration: none !important;
+  }
+  
+  body.menu .menu-intro a:hover,
+  body .main-content .menu-intro a:hover {
+    color: black !important;
+    text-decoration: underline !important;
+  }
+  
+  /* Style menu lists for mobile */
+  body.menu .menu-list,
+  body .main-content .menu-list {
+    width: 100% !important;
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 0 2rem 0 !important;
+  }
+  
+  body.menu .menu-list li,
+  body .main-content .menu-list li {
+    width: 100% !important;
+    padding: 1rem 0 !important;
+    border: none !important;
+    border-bottom: none !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.5rem !important;
+  }
+  
+  body.menu .menu-list strong,
+  body .main-content .menu-list strong {
+    font-size: 1.1rem !important;
+    color: black !important;
+  }
+  
+  body .main-content .menu-list small {
+    font-size: 0.9rem !important;
+    color: #666 !important;
+    line-height: 1.4 !important;
   }
 }

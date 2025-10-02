@@ -6,7 +6,7 @@
  <div class="page-container">
     <header class="header">
       <h1><?= $page->title() ?></h1>
-      <link rel="stylesheet" href="<?= url('assets/css/main.css') ?>">
+      <link rel="stylesheet" href="<?= url('assets/css/main.css') ?>?v=<?= time() ?>">
       <div class="status-message" id="statusMessage"></div>
     </header>
 
