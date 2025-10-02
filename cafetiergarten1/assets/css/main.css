@@ -39,4 +39,15 @@
     width: auto !important;
     height: auto !important;
   }
+  
+  /* Desktop Layout for Info & Produkte pages */
+  .desktop-layout {
+    display: block !important;
+    visibility: visible !important;
+  }
+  
+  .mobile-integrated-content {
+    display: none !important;
+    visibility: hidden !important;
+  }
 }

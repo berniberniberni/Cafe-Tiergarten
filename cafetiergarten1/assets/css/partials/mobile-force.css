@@ -303,4 +303,72 @@
     color: #666 !important;
     line-height: 1.4 !important;
   }
+
+  /* MOBILE INFO & PRODUKTE PAGES SPECIFIC STYLES */
+  
+  /* Hide desktop layout on mobile */
+  body .main-content .desktop-layout {
+    display: none !important;
+    visibility: hidden !important;
+  }
+  
+  /* Show mobile integrated content */
+  body .main-content .mobile-integrated-content {
+    display: block !important;
+    visibility: visible !important;
+    width: 428px !important;
+    max-width: 100vw !important;
+    min-width: 320px !important;
+    padding: 11px 16px !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+  }
+  
+  /* Style mobile sections */
+  body .main-content .mobile-section {
+    width: 100% !important;
+    margin-bottom: 2rem !important;
+    display: block !important;
+  }
+  
+  /* Style section titles */
+  body .main-content .mobile-section .section-title {
+    font-size: 1.3rem !important;
+    color: black !important;
+    margin-bottom: 1rem !important;
+    font-weight: bold !important;
+  }
+  
+  /* Style section text */
+  body .main-content .mobile-section p {
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    color: black !important;
+    margin-bottom: 1rem !important;
+    text-align: left !important;
+  }
+  
+  /* Style mobile section images */
+  body .main-content .mobile-section-images {
+    width: 100% !important;
+    margin: 1.5rem 0 !important;
+    display: block !important;
+  }
+  
+  body .main-content .mobile-section-images img {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 0 !important;
+    border-radius: 0 !important;
+    object-fit: cover !important;
+    display: block !important;
+  }
+  
+  /* Remove any borders or lines */
+  body .main-content .mobile-section,
+  body .main-content .mobile-section-images,
+  body .main-content .mobile-section img {
+    border: none !important;
+    box-shadow: none !important;
+  }
 }
